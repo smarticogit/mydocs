@@ -15,9 +15,9 @@
     - Se TYPE é AttentionTest e se recebe objeto attentionTest
     - Se TYPE é Insight e se recebe formId
     - Se formId existe na base de dados
-    - Método: POST
-    - URL:  `/collab`
-    - Payload:
+  - Método: POST
+  - URL:  `/collab`
+  - Payload:
     ```
         {
             "title": "Teste de Collab 04",
@@ -59,9 +59,9 @@
     - Se Type da collab é AttentionTest e recebe formId, lança erro;
     - Se Type da collab é Insight e recebe attentionTest, lança erro;
     - Se TYPE for Insight verifica se formId existe na base;
-    - Metódo: PUT
-    - URL: `/collab/id`
-      - Payload:
+  - Metódo: PUT
+  - URL: `/collab/id`
+    - Payload:
       ```
         {
             "title": "Teste de Collab 01 Updated",
@@ -106,13 +106,13 @@
 >
 - Obter Collab
   - Validações:
-  - Verifica se collabId existe na base de dados
+    - Verifica se collabId existe na base de dados
   - Método: GET
   - URL:  `/collab/id`
 >
 - Deletar Collab
   - Validações:
-  - Verifica se collabId existe na base de dados
-  - Se collab TYPE for diferente de CREATED, lança erro;
+    - Verifica se collabId existe na base de dados
+    - Se collab TYPE for diferente de CREATED, lança erro;
   - Método: DELETE
   - URL: `/collab/id`
